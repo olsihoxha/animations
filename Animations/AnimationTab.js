@@ -29,7 +29,6 @@ const data = Object.keys(images).map((i) => ({
     const Tabs=({scrollX,data,onItemPress})=>{
       const containerRef=React.useRef();
       const [measures,setMeasures]=React.useState([]);
-
       useEffect(()=>{
         let m=[];
           data.forEach(item=>
@@ -45,7 +44,7 @@ const data = Object.keys(images).map((i) => ({
                 }
                 )
             );
-      },[]);
+      },[measures]);
      
       return(
         <View style={{position:"absolute",top:100,width}}>
