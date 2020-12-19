@@ -86,9 +86,9 @@ const Deck = ({data,renderCard,onSwipeLeft,onSwipeRight}) => {
                         return null;
                     }
                  return (
-                    <View key={item.id} style={[styles.cardStyle,{zIndex:-100}]}>
+                    <Animated.View key={item.id} style={[styles.cardStyle,{zIndex:-100}]}>
                      {renderCard(item)}
-                     </View>);
+                     </Animated.View>);
                 }).reverse()
           }
     </View>
